@@ -1,12 +1,17 @@
 @charset "utf-8";
-
-// Import a Google Font
 @import url('https://rsms.me/inter/inter-ui.css');
 
 // Set your brand colors
+$brand-color: #2b5be6;
+$primary: $brand-color;
+
+// Layout
+$section-padding: 1.5rem 1.5rem;
 
 // Navbar
 $navbar-height: 5rem;
+
+// Input
 
 // Update Bulma's global variables
 $family-sans-serif: 'Inter UI', sans-serif;
@@ -24,3 +29,6 @@ $fullhd-enabled: false;
 @import '~bulma/sass/elements/title.sass';
 @import '~bulma/sass/components/navbar.sass';
 @import '~bulma/sass/layout/hero.sass';
+@import '~bulma/sass/elements/image.sass';
+@import '~bulma/sass/grid/columns.sass';
+@import '~bulma/sass/layout/section.sass';
