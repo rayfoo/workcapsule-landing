@@ -19,7 +19,7 @@ const Image = () => (
       query {
         logo: file(relativePath: { eq: "full_logo_md.png" }) {
           childImageSharp {
-            fixed(width: 125) {
+            fixed(width: 150) {
               ...GatsbyImageSharpFixed_tracedSVG
             }
           }

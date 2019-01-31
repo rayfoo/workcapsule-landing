@@ -18,7 +18,7 @@ class Header extends React.Component {
         <div className="container is-fluid">
           <div className="navbar-brand">
             <a className="navbar-item" href="https://bulma.io">
-              <span style={{ width: '125px' }}>
+              <span style={{ width: '150px' }}>
                 <Logo />
               </span>
             </a>
