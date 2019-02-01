@@ -4,7 +4,11 @@ import styled from '@emotion/styled'
 import product from '../images/product.gif'
 
 const Gif = styled.img`
-  width: 800px;
+  @media (max-width: 768px) {
+    margin-top: 40px;
+  }
+  margin-top: 100px;
+  width: 1500px;
 `
 
 const Hero = () => (
