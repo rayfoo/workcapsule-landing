@@ -5,8 +5,10 @@ import SignupForm from '../components/SignupForm'
 import Hero from '../components/Hero'
 import HeroBk from '../components/HeroBk'
 import TriangleBk from '../components/TriangleBk'
+import ConfettiBk from '../components/ConfettiBk'
 import Layout from '../components/layout'
 import Section from '../components/Section'
+import CallToAction from '../components/CallToAction'
 import SEO from '../components/seo'
 import Motivation from '../components/Motivation'
 import Reaction from '../components/Reaction'
@@ -50,7 +52,29 @@ const IndexPage = () => (
       >
         <Motivation />
       </Section>
+
+      <div className="has-background-white-bis">
+        <Section
+          textPosition="left"
+          title="Organize your entries in channels"
+          subtitle="Easily structure and navigate through your team's content. Stay up to date on what your team is working on and search through all the info."
+        >
+          <Motivation />
+        </Section>
+      </div>
+
+      <ConfettiBk>
+        <Section
+          textPosition="center"
+          title="Track progress over time"
+          subtitle="Easily structure and navigate through your team's content. Stay up to date on what your team is working on and search through all the info."
+        >
+          <Motivation />
+        </Section>
+      </ConfettiBk>
     </TriangleBk>
+
+    <CallToAction />
   </Layout>
 )
 

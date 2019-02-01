@@ -2,14 +2,17 @@ import React from 'react'
 import { css } from '@emotion/core'
 import styled from '@emotion/styled'
 
-const Subtitle = ({ children }) => (
-  <h2 className="has-text-grey-dark" css={subtitle}>
+const Subtitle = ({ inverted, children }) => (
+  <h2
+    className={inverted ? 'has-text-white' : 'has-text-grey-dark'}
+    css={subtitle}
+  >
     {children}
   </h2>
 )
 
 const Title = styled.h1`
-  color: #222d50;
+  color: ${props => (props.inverted ? 'white' : '#222d50')};
   letter-spacing: -1px;
   font-size: 26px;
   font-weight: 700;

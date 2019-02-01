@@ -1,15 +1,30 @@
 import React from 'react'
-import { css } from '@emotion/core'
+import styled from '@emotion/styled'
 import Title, { Subtitle } from './Title'
 
-const section = css`
+const ContainerStyles = styled.div`
   margin: 100px 0;
 `
 
 const Container = ({ children }) => (
-  <section className="section" css={section}>
+  <ContainerStyles className="section">
     <div className="container">{children}</div>
-  </section>
+  </ContainerStyles>
+)
+
+const SectionCentered = ({ title, subtitle, children }) => (
+  <Container>
+    <div css={{ marginBottom: '80px' }}>
+      <div className="columns">
+        <div className="column has-text-centered is-8 is-offset-2">
+          <Title>{title}</Title>
+          <Subtitle>{subtitle}</Subtitle>
+        </div>
+      </div>
+    </div>
+
+    {children}
+  </Container>
 )
 
 const SectionWithTextLeft = ({ title, children, subtitle }) => (
@@ -44,7 +59,7 @@ const Section = ({ textPosition = 'left', ...rest }) => {
   }
 
   if (textPosition === 'center') {
-    return <div />
+    return <SectionCentered {...rest} />
   }
 
   return <SectionWithTextLeft {...rest} />
