@@ -17,7 +17,7 @@ const SignupForm = () => (
           <input
             className="input is-primary is-medium"
             type="email"
-            placeholder="Text input"
+            placeholder="Your email"
           />
         </div>
 
