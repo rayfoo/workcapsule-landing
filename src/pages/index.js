@@ -1,20 +1,43 @@
 import React from 'react'
-import { Link } from 'gatsby'
 
+import Intro from '../components/Intro'
+import SignupForm from '../components/SignupForm'
+import Hero from '../components/Hero'
+import HeroBk from '../components/HeroBk'
 import Layout from '../components/Layout'
-import Image from '../components/Image'
+import Section from '../components/Section'
 import SEO from '../components/SEO'
+import Motivation from '../components/Motivation'
+import '../sass/mystyles.scss'
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <SEO
+      title="Workcapsule"
+      keywords={[`anti-todo`, `track habits`, `record daily activities`]}
+    />
+
+    <HeroBk>
+      <Intro />
+      <SignupForm />
+
+      <Hero />
+    </HeroBk>
+
+    <Section
+      reverse
+      title="Stay motivated, achieve more"
+      subtitle="Workcapsule is the anti-todo list. It helps you look back on all the things you’ve done and celebrate your wins. Give yourself a daily boost. "
+    >
+      <Motivation />
+    </Section>
+
+    <Section
+      title="Capture your actions & reactions"
+      subtitle="Workcapsule is the anti-todo list. It helps you look back on all the things you’ve done and celebrate your wins. Give yourself a daily boost. "
+    >
+      <Motivation />
+    </Section>
   </Layout>
 )
 
