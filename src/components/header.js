@@ -17,7 +17,7 @@ class Header extends React.Component {
       <nav className="navbar" role="navigation" aria-label="main navigation">
         <div className="container is-fluid">
           <div className="navbar-brand">
-            <a className="navbar-item" href="https://bulma.io">
+            <a className="navbar-item" href="https://workcapsule.io">
               <span style={{ width: '150px' }}>
                 <Logo />
               </span>
@@ -43,10 +43,18 @@ class Header extends React.Component {
             <div className="navbar-end">
               <div className="navbar-item">
                 <div className="buttons">
-                  <button className="button is-white">
+                  <a
+                    href="https://app.workcapsule.io/login"
+                    className="button is-white"
+                  >
                     <span className="has-text-primary">Login</span>
-                  </button>
-                  <button className="button is-primary">Get Started</button>
+                  </a>
+                  <a
+                    href="https://app.workcapsule.io/signup"
+                    className="button is-primary"
+                  >
+                    Get Started
+                  </a>
                 </div>
               </div>
             </div>
