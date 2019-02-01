@@ -1,6 +1,5 @@
 import React from 'react'
 import { css } from '@emotion/core'
-import Motivation from './Motivation'
 import Title, { Subtitle } from './Title'
 
 const section = css`
@@ -13,38 +12,42 @@ const Container = ({ children }) => (
   </section>
 )
 
-const Section = ({ children, title, subtitle, reverse = false }) => {
-  if (reverse) {
-    return (
-      <Container>
-        <div className="columns is-vcentered">
-          <div className="column is-7">
-            <Motivation />
-          </div>
+const SectionWithTextLeft = ({ title, children, subtitle }) => (
+  <Container>
+    <div className="columns is-vcentered">
+      <div className="column is-4">
+        <Title>{title}</Title>
+        <Subtitle>{subtitle}</Subtitle>
+      </div>
 
-          <div className="column is-4 is-offset-1">
-            <Title>{title}</Title>
-            <Subtitle>{subtitle}</Subtitle>
-          </div>
-        </div>
-      </Container>
-    )
+      <div className="column is-7 is-offset-1">{children}</div>
+    </div>
+  </Container>
+)
+
+const SectionWithTextRight = ({ title, children, subtitle }) => (
+  <Container>
+    <div className="columns is-vcentered">
+      <div className="column is-7">{children}</div>
+
+      <div className="column is-4 is-offset-1">
+        <Title>{title}</Title>
+        <Subtitle>{subtitle}</Subtitle>
+      </div>
+    </div>
+  </Container>
+)
+
+const Section = ({ textPosition = 'left', ...rest }) => {
+  if (textPosition === 'right') {
+    return <SectionWithTextRight {...rest} />
   }
 
-  return (
-    <Container>
-      <div className="columns is-vcentered">
-        <div className="column is-4">
-          <Title>{title}</Title>
-          <Subtitle>{subtitle}</Subtitle>
-        </div>
+  if (textPosition === 'center') {
+    return <div />
+  }
 
-        <div className="column is-7 is-offset-1">
-          <Motivation />
-        </div>
-      </div>
-    </Container>
-  )
+  return <SectionWithTextLeft {...rest} />
 }
 
 export default Section
