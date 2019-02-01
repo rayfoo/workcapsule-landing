@@ -6,7 +6,7 @@ import Hero from '../components/Hero'
 import HeroBk from '../components/HeroBk'
 import Layout from '../components/Layout'
 import Section from '../components/Section'
-import SEO from '../components/seo'
+import SEO from '../components/SEO'
 import Motivation from '../components/Motivation'
 import '../sass/mystyles.scss'
 
