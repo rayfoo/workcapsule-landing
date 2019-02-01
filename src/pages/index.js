@@ -12,7 +12,10 @@ import '../sass/mystyles.scss'
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO
+      title="Workcapsule"
+      keywords={[`anti-todo`, `track habits`, `record daily activities`]}
+    />
 
     <HeroBk>
       <Intro />
