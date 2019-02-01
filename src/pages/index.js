@@ -4,6 +4,7 @@ import Intro from '../components/Intro'
 import SignupForm from '../components/SignupForm'
 import Hero from '../components/Hero'
 import HeroBk from '../components/HeroBk'
+import TriangleBk from '../components/TriangleBk'
 import Layout from '../components/layout'
 import Section from '../components/Section'
 import SEO from '../components/seo'
@@ -32,12 +33,22 @@ const IndexPage = () => (
       <Motivation />
     </Section>
 
-    <Section
-      title="Capture your actions & reactions"
-      subtitle="Workcapsule is the anti-todo list. It helps you look back on all the things you’ve done and celebrate your wins. Give yourself a daily boost. "
-    >
-      <Motivation />
-    </Section>
+    <TriangleBk>
+      <Section
+        title="Capture actions and reactions"
+        subtitle="Workcapsule is the anti-todo list. It helps you look back on all the things you’ve done and celebrate your wins. Give yourself a daily boost. "
+      >
+        <Motivation />
+      </Section>
+
+      <Section
+        reverse
+        title="Rewind and review progress"
+        subtitle="Workcapsule is the anti-todo list. It helps you look back on all the things you’ve done and celebrate your wins. Give yourself a daily boost. "
+      >
+        <Motivation />
+      </Section>
+    </TriangleBk>
   </Layout>
 )
 
