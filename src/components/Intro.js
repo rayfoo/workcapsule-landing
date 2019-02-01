@@ -1,17 +1,20 @@
 import React from 'react'
+import { Subtitle } from './Title'
 
 const Intro = () => (
   <div className="section">
     <div className="container is-fluid has-text-centered">
       <h1
         className="is-size-3-mobile is-size-2-tablet is-size-1-desktop"
-        style={{ fontWeight: '700' }}
+        style={{
+          fontWeight: '900',
+          letterSpacing: '-1px',
+          color: '#222D50',
+        }}
       >
         A timecapsule for work and play
       </h1>
-      <h2 className="is-size-6-mobile is-size-5-tablet is-size-4-desktop">
-        Capture all your achievements and activities
-      </h2>
+      <Subtitle>Track all your achievements and activities</Subtitle>
     </div>
   </div>
 )
