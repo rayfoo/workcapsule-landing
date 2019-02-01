@@ -13,12 +13,12 @@ const Title = styled.h1`
   letter-spacing: -1px;
   font-size: 26px;
   font-weight: 700;
-  line-height: 32px;
+  line-height: 30px;
   margin-bottom: 20px;
 
   @media (min-width: 769px) {
     font-size: 32px;
-    line-height: 46px;
+    line-height: 40px;
     margin-bottom: 32px;
   }
 
