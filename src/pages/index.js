@@ -25,7 +25,15 @@ const IndexPage = () => (
     </HeroBk>
 
     <Section
+      reverse
       title="Stay motivated, achieve more"
+      subtitle="Workcapsule is the anti-todo list. It helps you look back on all the things you’ve done and celebrate your wins. Give yourself a daily boost. "
+    >
+      <Motivation />
+    </Section>
+
+    <Section
+      title="Capture actions and reactions"
       subtitle="Workcapsule is the anti-todo list. It helps you look back on all the things you’ve done and celebrate your wins. Give yourself a daily boost. "
     >
       <Motivation />
