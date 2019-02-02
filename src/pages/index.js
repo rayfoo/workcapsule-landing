@@ -56,7 +56,7 @@ const IndexPage = () => (
       <div className="has-background-white-bis">
         <Section
           textPosition="left"
-          title="Organize your entries in channels"
+          title="Organize entries with channels"
           subtitle="Easily structure and navigate through your team's content. Stay up to date on what your team is working on and search through all the info."
         >
           <Motivation />

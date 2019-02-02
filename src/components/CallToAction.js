@@ -2,6 +2,7 @@ import React from 'react'
 import styled from '@emotion/styled'
 
 import Title, { Subtitle } from './Title'
+import SignupForm from './SignupForm'
 import swoosh from '../images/swoosh.svg'
 
 const Swoosh = styled.img`
@@ -9,15 +10,17 @@ const Swoosh = styled.img`
 `
 
 const Container = styled.div`
-  margin: 100px 0;
+  margin: 100px 0 0 0;
   background-color: #222d50;
 `
 
 const Header = styled.div`
-  margin: 100px 0;
+  margin: 100px 0 40px 0;
 `
 
-const Form = styled.form``
+const Form = styled.form`
+  padding-bottom: 100px;
+`
 
 const CallToAction = () => (
   <Container>
@@ -27,12 +30,16 @@ const CallToAction = () => (
       <div className="columns">
         <div className="column has-text-centered is-8 is-offset-2">
           <Title inverted>Achieve more with Workcapsule</Title>
-          <Subtitle inverted>something</Subtitle>
+          <Subtitle inverted>
+            Get started today for free, no credit cards required.
+          </Subtitle>
         </div>
       </div>
     </Header>
 
-    <Form>Form</Form>
+    <Form>
+      <SignupForm />
+    </Form>
   </Container>
 )
 
