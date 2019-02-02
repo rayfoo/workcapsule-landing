@@ -9,6 +9,8 @@ const Gif = styled.img`
   }
   margin-top: 100px;
   width: 1500px;
+  border-radius: 8px;
+  box-shadow: 0 32px 30px 0 rgba(0, 0, 0, 0.19);
 `
 
 const Hero = () => (
