@@ -12,6 +12,8 @@ import CallToAction from '../components/CallToAction'
 import SEO from '../components/seo'
 import Motivation from '../components/Motivation'
 import Reaction from '../components/Reaction'
+import Channel from '../components/Channel'
+import Rewind from '../components/Rewind'
 import '../sass/mystyles.scss'
 
 const IndexPage = () => (
@@ -36,43 +38,41 @@ const IndexPage = () => (
       <Motivation />
     </Section>
 
-    <TriangleBk>
+    <Section
+      textPosition="left"
+      title="Capture actions and reactions"
+      subtitle="Workcapsule is the anti-todo list. It helps you look back on all the things you’ve done and celebrate your wins. Give yourself a daily boost. "
+    >
+      <Reaction />
+    </Section>
+
+    <Section
+      textPosition="right"
+      title="Rewind and review progress"
+      subtitle="Workcapsule is the anti-todo list. It helps you look back on all the things you’ve done and celebrate your wins. Give yourself a daily boost. "
+    >
+      <Rewind />
+    </Section>
+
+    <div className="has-background-white-bis">
       <Section
         textPosition="left"
-        title="Capture actions and reactions"
-        subtitle="Workcapsule is the anti-todo list. It helps you look back on all the things you’ve done and celebrate your wins. Give yourself a daily boost. "
+        title="Organize entries with channels"
+        subtitle="Easily structure and navigate through your team's content. Stay up to date on what your team is working on and search through all the info."
       >
-        <Reaction />
+        <Channel />
       </Section>
+    </div>
 
+    <ConfettiBk>
       <Section
-        textPosition="right"
-        title="Rewind and review progress"
-        subtitle="Workcapsule is the anti-todo list. It helps you look back on all the things you’ve done and celebrate your wins. Give yourself a daily boost. "
+        textPosition="center"
+        title="Track progress over time"
+        subtitle="Easily structure and navigate through your team's content. Stay up to date on what your team is working on and search through all the info."
       >
         <Motivation />
       </Section>
-
-      <div className="has-background-white-bis">
-        <Section
-          textPosition="left"
-          title="Organize entries with channels"
-          subtitle="Easily structure and navigate through your team's content. Stay up to date on what your team is working on and search through all the info."
-        >
-          <Motivation />
-        </Section>
-      </div>
-
-      <ConfettiBk>
-        <Section
-          textPosition="center"
-          title="Track progress over time"
-          subtitle="Easily structure and navigate through your team's content. Stay up to date on what your team is working on and search through all the info."
-        >
-          <Motivation />
-        </Section>
-      </ConfettiBk>
-    </TriangleBk>
+    </ConfettiBk>
 
     <CallToAction />
   </Layout>
