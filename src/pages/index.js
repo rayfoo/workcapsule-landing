@@ -14,6 +14,7 @@ import Motivation from '../components/Motivation'
 import Reaction from '../components/Reaction'
 import Channel from '../components/Channel'
 import Rewind from '../components/Rewind'
+import Report from '../components/Report'
 import '../sass/mystyles.scss'
 
 const IndexPage = () => (
@@ -70,7 +71,9 @@ const IndexPage = () => (
         title="Track progress over time"
         subtitle="Easily structure and navigate through your team's content. Stay up to date on what your team is working on and search through all the info."
       >
-        <Motivation />
+        <div style={{ maxWidth: '800px' }}>
+          <Report />
+        </div>
       </Section>
     </ConfettiBk>
 
