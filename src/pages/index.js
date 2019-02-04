@@ -41,11 +41,11 @@ const IndexPage = () => (
      *
      */}
     <Section>
-      <SectionImage align="left">
+      <SectionImage>
         <Mockups.Motivation />
       </SectionImage>
 
-      <SectionText align="right">
+      <SectionText>
         <SectionHead>
           <Title>Stay motivated, achieve more</Title>
         </SectionHead>
@@ -67,7 +67,7 @@ const IndexPage = () => (
      *
      */}
     <Section>
-      <SectionText align="left">
+      <SectionText>
         <SectionHead>
           <Title>Capture actions and reactions</Title>
         </SectionHead>
@@ -90,7 +90,7 @@ const IndexPage = () => (
         </SectionBody>
       </SectionText>
 
-      <SectionImage align="right">
+      <SectionImage>
         <Mockups.Reaction />
       </SectionImage>
     </Section>
@@ -102,11 +102,11 @@ const IndexPage = () => (
      *
      */}
     <Section>
-      <SectionImage align="left">
+      <SectionImage>
         <Mockups.Rewind />
       </SectionImage>
 
-      <SectionText align="right">
+      <SectionText>
         <SectionHead>
           <Title>Rewind and review progress</Title>
         </SectionHead>
@@ -155,11 +155,11 @@ const IndexPage = () => (
      */}
     <div className="has-background-white-bis">
       <Section>
-        <SectionImage align="left">
+        <SectionImage>
           <Mockups.Channel />
         </SectionImage>
 
-        <SectionText align="right">
+        <SectionText>
           <SectionHead>
             <Title>Organize entries with channels </Title>
           </SectionHead>
@@ -182,7 +182,7 @@ const IndexPage = () => (
      *
      */}
     <Section>
-      <SectionText align="left">
+      <SectionText>
         <SectionHead>
           <Title>Perfect for the entire team</Title>
         </SectionHead>
@@ -196,7 +196,7 @@ const IndexPage = () => (
         </SectionBody>
       </SectionText>
 
-      <SectionImage align="right">
+      <SectionImage>
         <Mockups.Team />
       </SectionImage>
     </Section>

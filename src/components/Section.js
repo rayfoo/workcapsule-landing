@@ -24,19 +24,11 @@ const Section = ({ children }) => (
   </div>
 )
 
-export const SectionImage = ({ children, align = 'left' }) => {
-  if (align === 'left') {
-    return <div className="column is-7">{children}</div>
-  }
-
-  return <div className="column is-7">{children}</div>
+export const SectionImage = ({ children }) => {
+  return <div className="column is-7-desktop">{children}</div>
 }
 
 export const SectionText = ({ children, align = 'left' }) => {
-  if (align === 'left') {
-    return <div className="column is-5">{children}</div>
-  }
-
   if (align === 'center') {
     return (
       <div className="column has-text-centered is-10 is-offset-1">
@@ -45,7 +37,7 @@ export const SectionText = ({ children, align = 'left' }) => {
     )
   }
 
-  return <div className="column is-5">{children}</div>
+  return <div className="column is-5-desktop">{children}</div>
 }
 
 export const SectionHead = styled.div`
