@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from '@emotion/styled'
 
-import bk from '../images/hero_bk.svg'
+import bk from '../../images/hero_bk.svg'
 
 const Container = styled.div`
   background: url(${bk});

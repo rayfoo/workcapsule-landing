@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from './Logo'
+import Logo from './Mockups/Logo'
 
 class Header extends React.Component {
   state = {

@@ -1,13 +1,15 @@
 import React from 'react'
 
+import Layout from '../components/layout'
+import { Title, Subtitle } from '../components/Text'
+import Section, { SectionImage, SectionText } from '../components/Section'
+import SEO from '../components/seo'
+import '../sass/mystyles.scss'
+
 import Intro from '../components/Intro'
 import SignupForm from '../components/SignupForm'
-import Layout from '../components/layout'
-import Section from '../components/Section'
 import CallToAction from '../components/CallToAction'
-import SEO from '../components/seo'
 import Mockups from '../components/Mockups'
-import '../sass/mystyles.scss'
 
 const IndexPage = () => (
   <Layout>
@@ -20,42 +22,65 @@ const IndexPage = () => (
       <Intro />
       <SignupForm />
 
-      <Hero />
+      <Mockups.Hero />
     </Mockups.HeroBk>
 
-    <Section
-      textPosition="right"
-      title="Stay motivated, achieve more"
-      subtitle="Workcapsule is the anti-todo list. It helps you look back on all the things you’ve done and celebrate your wins. Give yourself a daily boost. "
-    >
-      <Mockups.Motivation />
+    <Section>
+      <SectionImage align="left">
+        <Mockups.Motivation />
+      </SectionImage>
+
+      <SectionText align="right">
+        <Title>Stay motivated, achieve more</Title>
+        <Subtitle>
+          Workcapsule is the anti-todo list. It helps you look back on all the
+          things you’ve done and celebrate your wins. Give yourself a daily
+          boost.
+        </Subtitle>
+      </SectionText>
     </Section>
 
-    <Section
-      textPosition="left"
-      title="Capture actions and reactions"
-      subtitle="Workcapsule is the anti-todo list. It helps you look back on all the things you’ve done and celebrate your wins. Give yourself a daily boost. "
-    >
-      <Mockups.Reaction />
+    <Section>
+      <SectionText align="left">
+        <Title>Capture actions and reactions</Title>
+        <Subtitle>
+          Workcapsule is the anti-todo list. It helps you look back on all the
+          things you’ve done and celebrate your wins. Give yourself a daily
+          boost.
+        </Subtitle>
+      </SectionText>
+
+      <SectionImage align="right">
+        <Mockups.Reaction />
+      </SectionImage>
     </Section>
 
-    <Section
-      textPosition="right"
-      title="Rewind and review progress"
-      subtitle="Workcapsule is the anti-todo list. It helps you look back on all the things you’ve done and celebrate your wins. Give yourself a daily boost. "
-    >
-      <Mockups.Rewind />
+    <Section>
+      <SectionImage align="left">
+        <Mockups.Rewind />
+      </SectionImage>
+
+      <SectionText align="right">
+        <Title>Rewind and review progress</Title>
+        <Subtitle>
+          Workcapsule is the anti-todo list. It helps you look back on all the
+          things you’ve done and celebrate your wins. Give yourself a daily
+          boost.
+        </Subtitle>
+      </SectionText>
     </Section>
 
     <Mockups.ConfettiBk>
-      <Section
-        textPosition="center"
-        title="Track progress over time"
-        subtitle="Easily structure and navigate through your team's content. Stay up to date on what your team is working on and search through all the info."
-      >
-        <div style={{ maxWidth: '800px' }}>
+      <Section>
+        <SectionText align="center">
+          <Title>Track progress over time</Title>
+          <Subtitle>
+            Workcapsule is the anti-todo list. It helps you look back on all the
+            things you’ve done and celebrate your wins. Give yourself a daily
+            boost.
+          </Subtitle>
           <Mockups.Report />
-        </div>
+        </SectionText>
       </Section>
     </Mockups.ConfettiBk>
 

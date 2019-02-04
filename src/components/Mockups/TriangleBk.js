@@ -1,6 +1,6 @@
 import styled from '@emotion/styled'
 
-import bk from '../images/triangle_bk.svg'
+import bk from '../../images/triangle_bk.svg'
 
 const Container = styled.div`
   background: url(${bk});
