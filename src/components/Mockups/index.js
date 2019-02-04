@@ -8,6 +8,7 @@ import Reaction from './Reaction'
 import Report from './Report'
 import Rewind from './Rewind'
 import TriangleBk from './TriangleBk'
+import Team from './Team'
 
 export default {
   Channel,
@@ -20,4 +21,5 @@ export default {
   Report,
   Rewind,
   TriangleBk,
+  Team,
 }
