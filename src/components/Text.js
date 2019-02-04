@@ -27,18 +27,15 @@ export const Title = styled.h1`
   font-size: 26px;
   font-weight: 700;
   line-height: 30px;
-  margin-bottom: 20px;
 
   @media (min-width: 769px) {
     font-size: 32px;
     line-height: 40px;
-    margin-bottom: 32px;
   }
 
   @media (min-width: 1024px) {
     font-size: 38px;
     line-height: 46px;
-    margin-bottom: 40px;
   }
 `
 
@@ -50,6 +47,12 @@ export const Subtitle = ({ inverted, children }) => (
     {children}
   </h2>
 )
+
+export const Body = styled.div`
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500px;
+`
 
 const subtitle = css`
   font-size: 16px;

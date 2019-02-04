@@ -1,5 +1,6 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
+import { css } from '@emotion/core'
 import Img from 'gatsby-image'
 
 /*
@@ -12,6 +13,11 @@ import Img from 'gatsby-image'
  * - `gatsby-image`: https://gatsby.app/gatsby-image
  * - `StaticQuery`: https://gatsby.app/staticquery
  */
+
+const styles = css`
+  border-radius: 8px;
+  box-shadow: 0 32px 30px 0 rgba(0, 0, 0, 0.19);
+`
 
 const Image = () => (
   <StaticQuery
@@ -26,7 +32,9 @@ const Image = () => (
         }
       }
     `}
-    render={data => <Img fluid={data.report.childImageSharp.fluid} />}
+    render={data => (
+      <Img fluid={data.report.childImageSharp.fluid} css={styles} />
+    )}
   />
 )
 export default Image

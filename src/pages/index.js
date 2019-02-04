@@ -2,7 +2,12 @@ import React from 'react'
 
 import Layout from '../components/layout'
 import { Title, Subtitle } from '../components/Text'
-import Section, { SectionImage, SectionText } from '../components/Section'
+import Section, {
+  SectionImage,
+  SectionText,
+  SectionHead,
+  SectionBody,
+} from '../components/Section'
 import SEO from '../components/seo'
 import '../sass/mystyles.scss'
 
@@ -31,23 +36,32 @@ const IndexPage = () => (
       </SectionImage>
 
       <SectionText align="right">
-        <Title>Stay motivated, achieve more</Title>
-        <Subtitle>
-          Workcapsule is the anti-todo list. It helps you look back on all the
-          things you’ve done and celebrate your wins. Give yourself a daily
-          boost.
-        </Subtitle>
+        <SectionHead>
+          <Title>Stay motivated, achieve more</Title>
+        </SectionHead>
+
+        <SectionBody>
+          <Subtitle>
+            Workcapsule is the anti-todo list. It helps you look back on all the
+            things you’ve done and celebrate your wins. Give yourself a daily
+            boost.
+          </Subtitle>
+        </SectionBody>
       </SectionText>
     </Section>
 
     <Section>
       <SectionText align="left">
-        <Title>Capture actions and reactions</Title>
-        <Subtitle>
-          Workcapsule is the anti-todo list. It helps you look back on all the
-          things you’ve done and celebrate your wins. Give yourself a daily
-          boost.
-        </Subtitle>
+        <SectionHead>
+          <Title>Capture actions and reactions</Title>
+        </SectionHead>
+        <SectionBody>
+          <Subtitle>
+            Workcapsule is the anti-todo list. It helps you look back on all the
+            things you’ve done and celebrate your wins. Give yourself a daily
+            boost.
+          </Subtitle>
+        </SectionBody>
       </SectionText>
 
       <SectionImage align="right">
@@ -61,38 +75,77 @@ const IndexPage = () => (
       </SectionImage>
 
       <SectionText align="right">
-        <Title>Rewind and review progress</Title>
-        <Subtitle>
-          Workcapsule is the anti-todo list. It helps you look back on all the
-          things you’ve done and celebrate your wins. Give yourself a daily
-          boost.
-        </Subtitle>
+        <SectionHead>
+          <Title>Rewind and review progress</Title>
+        </SectionHead>
+
+        <SectionBody>
+          <Subtitle>
+            Workcapsule is the anti-todo list. It helps you look back on all the
+            things you’ve done and celebrate your wins. Give yourself a daily
+            boost.
+          </Subtitle>
+        </SectionBody>
       </SectionText>
     </Section>
 
     <Mockups.ConfettiBk>
       <Section>
         <SectionText align="center">
-          <Title>Track progress over time</Title>
-          <Subtitle>
-            Workcapsule is the anti-todo list. It helps you look back on all the
-            things you’ve done and celebrate your wins. Give yourself a daily
-            boost.
-          </Subtitle>
+          <SectionHead>
+            <Title>Track progress over time</Title>
+          </SectionHead>
+
+          <SectionBody>
+            <Subtitle>
+              Workcapsule is the anti-todo list. It helps you look back on all
+              the things you’ve done and celebrate your wins. Give yourself a
+              daily boost.
+            </Subtitle>
+          </SectionBody>
+
           <Mockups.Report />
         </SectionText>
       </Section>
     </Mockups.ConfettiBk>
 
     <div className="has-background-white-bis">
-      <Section
-        textPosition="left"
-        title="Organize entries with channels"
-        subtitle="Easily structure and navigate through your team's content. Stay up to date on what your team is working on and search through all the info."
-      >
-        <Mockups.Channel />
+      <Section>
+        <SectionImage align="left">
+          <Mockups.Channel />
+        </SectionImage>
+
+        <SectionText align="right">
+          <SectionHead>
+            <Title>Organize entries with channels </Title>
+          </SectionHead>
+
+          <SectionBody>
+            <Subtitle>
+              Easily structure and navigate through your team's content. Stay up
+              to date on what your team is working on and search through all the
+              info.
+            </Subtitle>
+          </SectionBody>
+        </SectionText>
       </Section>
     </div>
+
+    <Section>
+      <SectionText align="right">
+        <SectionHead>
+          <Title>Perfect for the whole team</Title>
+        </SectionHead>
+
+        <SectionBody>
+          <Subtitle>
+            Workcapsule is the anti-todo list. It helps you look back on all the
+            things you’ve done and celebrate your wins. Give yourself a daily
+            boost.
+          </Subtitle>
+        </SectionBody>
+      </SectionText>
+    </Section>
 
     <CallToAction />
   </Layout>
