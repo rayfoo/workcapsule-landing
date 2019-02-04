@@ -2,16 +2,26 @@ import React from 'react'
 import { css } from '@emotion/core'
 import styled from '@emotion/styled'
 
-const Subtitle = ({ inverted, children }) => (
-  <h2
-    className={inverted ? 'has-text-white' : 'has-text-grey-dark'}
-    css={subtitle}
-  >
-    {children}
-  </h2>
-)
+export const Max = styled.h1`
+  color: ${props => (props.inverted ? 'white' : '#222d50')};
+  letter-spacing: -1px;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 900;
+  margin-bottom: 20px;
 
-const Title = styled.h1`
+  @media (min-width: 769px) {
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 48px;
+    line-height: 48px;
+  }
+`
+
+export const Title = styled.h1`
   color: ${props => (props.inverted ? 'white' : '#222d50')};
   letter-spacing: -1px;
   font-size: 26px;
@@ -32,6 +42,15 @@ const Title = styled.h1`
   }
 `
 
+export const Subtitle = ({ inverted, children }) => (
+  <h2
+    className={inverted ? 'has-text-white' : 'has-text-grey-dark'}
+    css={subtitle}
+  >
+    {children}
+  </h2>
+)
+
 const subtitle = css`
   font-size: 16px;
   font-weight: 400;
@@ -47,6 +66,3 @@ const subtitle = css`
     line-height: 28px;
   }
 `
-
-export default Title
-export { Subtitle }

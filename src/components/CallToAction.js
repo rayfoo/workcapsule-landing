@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from '@emotion/styled'
 
-import Title, { Subtitle } from './Title'
+import { Title, Subtitle } from './Text'
 import SignupForm from './SignupForm'
 import swoosh from '../images/swoosh.svg'
 

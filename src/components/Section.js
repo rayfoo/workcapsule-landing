@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from '@emotion/styled'
-import Title, { Subtitle } from './Title'
+import { Title, Subtitle } from './Text'
 
 const ContainerStyles = styled.div`
   margin: 100px 0;

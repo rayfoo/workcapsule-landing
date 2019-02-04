@@ -2,19 +2,11 @@ import React from 'react'
 
 import Intro from '../components/Intro'
 import SignupForm from '../components/SignupForm'
-import Hero from '../components/Hero'
-import HeroBk from '../components/HeroBk'
-import TriangleBk from '../components/TriangleBk'
-import ConfettiBk from '../components/ConfettiBk'
 import Layout from '../components/layout'
 import Section from '../components/Section'
 import CallToAction from '../components/CallToAction'
 import SEO from '../components/seo'
-import Motivation from '../components/Motivation'
-import Reaction from '../components/Reaction'
-import Channel from '../components/Channel'
-import Rewind from '../components/Rewind'
-import Report from '../components/Report'
+import Mockups from '../components/Mockups'
 import '../sass/mystyles.scss'
 
 const IndexPage = () => (
@@ -24,19 +16,19 @@ const IndexPage = () => (
       keywords={[`anti-todo`, `track habits`, `record daily activities`]}
     />
 
-    <HeroBk>
+    <Mockups.HeroBk>
       <Intro />
       <SignupForm />
 
       <Hero />
-    </HeroBk>
+    </Mockups.HeroBk>
 
     <Section
       textPosition="right"
       title="Stay motivated, achieve more"
       subtitle="Workcapsule is the anti-todo list. It helps you look back on all the things you’ve done and celebrate your wins. Give yourself a daily boost. "
     >
-      <Motivation />
+      <Mockups.Motivation />
     </Section>
 
     <Section
@@ -44,7 +36,7 @@ const IndexPage = () => (
       title="Capture actions and reactions"
       subtitle="Workcapsule is the anti-todo list. It helps you look back on all the things you’ve done and celebrate your wins. Give yourself a daily boost. "
     >
-      <Reaction />
+      <Mockups.Reaction />
     </Section>
 
     <Section
@@ -52,8 +44,20 @@ const IndexPage = () => (
       title="Rewind and review progress"
       subtitle="Workcapsule is the anti-todo list. It helps you look back on all the things you’ve done and celebrate your wins. Give yourself a daily boost. "
     >
-      <Rewind />
+      <Mockups.Rewind />
     </Section>
+
+    <Mockups.ConfettiBk>
+      <Section
+        textPosition="center"
+        title="Track progress over time"
+        subtitle="Easily structure and navigate through your team's content. Stay up to date on what your team is working on and search through all the info."
+      >
+        <div style={{ maxWidth: '800px' }}>
+          <Mockups.Report />
+        </div>
+      </Section>
+    </Mockups.ConfettiBk>
 
     <div className="has-background-white-bis">
       <Section
@@ -61,21 +65,9 @@ const IndexPage = () => (
         title="Organize entries with channels"
         subtitle="Easily structure and navigate through your team's content. Stay up to date on what your team is working on and search through all the info."
       >
-        <Channel />
+        <Mockups.Channel />
       </Section>
     </div>
-
-    <ConfettiBk>
-      <Section
-        textPosition="center"
-        title="Track progress over time"
-        subtitle="Easily structure and navigate through your team's content. Stay up to date on what your team is working on and search through all the info."
-      >
-        <div style={{ maxWidth: '800px' }}>
-          <Report />
-        </div>
-      </Section>
-    </ConfettiBk>
 
     <CallToAction />
   </Layout>
