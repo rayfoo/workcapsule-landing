@@ -49,7 +49,7 @@ export const Subtitle = ({ inverted, children }) => (
 )
 
 export const Body = styled.div`
-  font-size: 16px;
+  font-size: 15px;
   line-height: 24px;
   font-weight: 500px;
 `

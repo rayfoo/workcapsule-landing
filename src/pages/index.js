@@ -7,6 +7,8 @@ import Section, {
   SectionText,
   SectionHead,
   SectionBody,
+  Item,
+  ItemIcon,
 } from '../components/Section'
 import SEO from '../components/seo'
 import '../sass/mystyles.scss'
@@ -15,6 +17,8 @@ import Intro from '../components/Intro'
 import SignupForm from '../components/SignupForm'
 import CallToAction from '../components/CallToAction'
 import Mockups from '../components/Mockups'
+
+import myIcon from '../images/icon.svg'
 
 const IndexPage = () => (
   <Layout>
@@ -30,6 +34,12 @@ const IndexPage = () => (
       <Mockups.Hero />
     </Mockups.HeroBk>
 
+    {/*
+     * SECTION ONE
+     *
+     * Stay motivated and achieve more with Workcaspule
+     *
+     */}
     <Section>
       <SectionImage align="left">
         <Mockups.Motivation />
@@ -50,17 +60,33 @@ const IndexPage = () => (
       </SectionText>
     </Section>
 
+    {/*
+     * SECTION TWO
+     *
+     * Capture what you worked on and how you felt
+     *
+     */}
     <Section>
       <SectionText align="left">
         <SectionHead>
           <Title>Capture actions and reactions</Title>
         </SectionHead>
         <SectionBody>
-          <Body>
-            Workcapsule is the anti-todo list. It helps you look back on all the
-            things you’ve done and celebrate your wins. Give yourself a daily
-            boost.
-          </Body>
+          <Item>
+            <ItemIcon src={myIcon} />
+            <Body>
+              Workcapsule is the anti-todo list. It helps you look back on all
+              the things.
+            </Body>
+          </Item>
+
+          <Item>
+            <ItemIcon src={myIcon} />
+            <Body>
+              Workcapsule is the anti-todo list. It helps you look back on all
+              the things.
+            </Body>
+          </Item>
         </SectionBody>
       </SectionText>
 
@@ -69,6 +95,12 @@ const IndexPage = () => (
       </SectionImage>
     </Section>
 
+    {/*
+     * SECTION THREE
+     *
+     * Rewind and look back at your progress
+     *
+     */}
     <Section>
       <SectionImage align="left">
         <Mockups.Rewind />
@@ -89,6 +121,12 @@ const IndexPage = () => (
       </SectionText>
     </Section>
 
+    {/*
+     * SECTION FOUR
+     *
+     * Spot productivity with reporting
+     *
+     */}
     <Mockups.ConfettiBk>
       <Section>
         <SectionText align="center">
@@ -109,6 +147,12 @@ const IndexPage = () => (
       </Section>
     </Mockups.ConfettiBk>
 
+    {/*
+     * SECTION Five
+     *
+     * Use channels
+     *
+     */}
     <div className="has-background-white-bis">
       <Section>
         <SectionImage align="left">
@@ -131,6 +175,12 @@ const IndexPage = () => (
       </Section>
     </div>
 
+    {/*
+     * SECTION Six
+     *
+     * Teams!
+     *
+     */}
     <Section>
       <SectionText align="left">
         <SectionHead>

@@ -60,6 +60,19 @@ export const SectionHead = styled.div`
   }
 `
 
+export const Item = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 24px;
+`
+
+export const ItemIcon = styled.img`
+  width: 32px;
+  height: 32px;
+  margin-right: 12px;
+`
+
 export const SectionBody = styled.div``
 
 export default Section
