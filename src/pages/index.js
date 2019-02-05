@@ -77,7 +77,7 @@ const IndexPage = () => (
         </SectionHead>
         <SectionBody>
           <Item>
-            <ItemIcon src={myIcon} />
+            <ItemIcon icon="far fa-times-circle" color="green" />
             <Body>
               <strong>An anti-todo list.</strong> There are no boxes to check
               off, no deadlines and no stress
@@ -85,7 +85,7 @@ const IndexPage = () => (
           </Item>
 
           <Item>
-            <ItemIcon src={myIcon} />
+            <ItemIcon icon="fas fa-glass-cheers" color="green" />
             <Body>
               <strong>Simply record what you did</strong> and go celebrate your
               wins, big or small
@@ -93,7 +93,7 @@ const IndexPage = () => (
           </Item>
 
           <Item>
-            <ItemIcon src={myIcon} />
+            <ItemIcon icon="far fa-grin-beam" color="green" />
             <Body>
               <strong>Use emojis to capture the moment </strong> and give
               yourself a little boost.
@@ -125,7 +125,7 @@ const IndexPage = () => (
 
         <SectionBody>
           <Item>
-            <ItemIcon src={myIcon} />
+            <ItemIcon icon="far fa-calendar-alt" color="blue" />
             <Body>
               <strong>Look back and find</strong> your accomplishments from last
               week, month or any time
@@ -133,15 +133,15 @@ const IndexPage = () => (
           </Item>
 
           <Item>
-            <ItemIcon src={myIcon} />
+            <ItemIcon icon="far fa-list-alt" color="blue" />
             <Body>
-              <strong>Make new habits stick</strong> by seeing your streak and
-              enforcing consistency
+              <strong>Make new habits stick</strong> by seeing your streaks and
+              encouraging consistency
             </Body>
           </Item>
 
           <Item>
-            <ItemIcon src={myIcon} />
+            <ItemIcon icon="far fa-arrow-alt-circle-right" color="blue" />
             <Body>
               <strong>Know if you are moving forward</strong> and making
               progress on important goals
@@ -210,14 +210,15 @@ const IndexPage = () => (
 
           <SectionBody>
             <Item>
-              <ItemIcon src={myIcon} />
+              <ItemIcon icon="fas fa-th-large" color="red" />
               <Body>
-                <strong>Customize</strong> to organize your
+                <strong>Flexible structure</strong> that adapts to your way of
+                working
               </Body>
             </Item>
 
             <Item>
-              <ItemIcon src={myIcon} />
+              <ItemIcon icon="far fa-eye" color="red" />
               <Body>
                 <strong>Public channels</strong> allow you to share your wins
                 with coworkers, friends and family
@@ -225,7 +226,7 @@ const IndexPage = () => (
             </Item>
 
             <Item>
-              <ItemIcon src={myIcon} />
+              <ItemIcon icon="fas fa-lock" color="red" />
               <Body>
                 <strong>Private channels</strong> let you keep humble brags to
                 yourself
@@ -254,7 +255,7 @@ const IndexPage = () => (
 
         <SectionBody>
           <Item>
-            <ItemIcon src={myIcon} />
+            <ItemIcon icon="fas fa-sync" color="purple" />
             <Body>
               <strong>Keep your team in-sync</strong> and up to date on daily,
               weekly and monthly progress
@@ -262,7 +263,7 @@ const IndexPage = () => (
           </Item>
 
           <Item>
-            <ItemIcon src={myIcon} />
+            <ItemIcon icon="fas fa-inbox" color="purple" />
             <Body>
               <strong>Avoid unnecessary status meetings</strong> and keep track
               of all updates in one place
@@ -270,7 +271,7 @@ const IndexPage = () => (
           </Item>
 
           <Item>
-            <ItemIcon src={myIcon} />
+            <ItemIcon icon="far fa-check-square" color="purple" />
             <Body>
               <strong>Simplify performance reviews</strong> and never be left
               guessing how your team is doing

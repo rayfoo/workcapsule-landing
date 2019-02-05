@@ -16,6 +16,17 @@ const styles = {
   `,
 }
 
+const colors = {
+  primary: '#2B5BE6',
+  blue: '#4AB2E7',
+  green: '#5EC3A6',
+  yellow: '#EAC12F',
+  orange: '#ED7639',
+  red: '#E94962',
+  purple: '#774EE0',
+  pink: '#E16AC0',
+}
+
 const Section = ({ children }) => (
   <div className="section" css={styles.section}>
     <div className="container">
@@ -61,10 +72,18 @@ export const Item = styled.div`
   margin-bottom: 20px;
 `
 
-export const ItemIcon = styled.img`
+export const ItemIcon = ({ icon, color }) => (
+  <ItemIconWrapper color={color}>
+    <i class={icon} />
+  </ItemIconWrapper>
+)
+
+const ItemIconWrapper = styled.span`
   width: 32px;
   height: 32px;
+  font-size: 24px;
   margin-right: 12px;
+  color: ${props => colors[props.color]};
 `
 
 export const SectionBody = styled.div``
