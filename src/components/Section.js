@@ -24,8 +24,10 @@ const Section = ({ children }) => (
   </div>
 )
 
-export const SectionImage = ({ children }) => {
-  return <div className="column is-7-desktop">{children}</div>
+export const SectionImage = ({ children, hidden }) => {
+  return (
+    <div className={`column is-7-desktop is-hidden-${hidden}`}>{children}</div>
+  )
 }
 
 export const SectionText = ({ children, align = 'left' }) => {

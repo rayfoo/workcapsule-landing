@@ -30,7 +30,14 @@ const Footer = () => (
       <Level>
         <LogoOnly />
 
-        <Text>Made with 💙 in NYC.</Text>
+        <Text>
+          Built in NYC by{' '}
+          <strong>
+            <a href="https://rayfuu.com" css={{ color: '#5EC3A6' }}>
+              Ray Fu
+            </a>
+          </strong>
+        </Text>
 
         <Text>
           <a href="mailto:hi@workcapsule.io">Contact</a>

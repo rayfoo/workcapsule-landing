@@ -41,23 +41,27 @@ const IndexPage = () => (
      *
      */}
     <Section>
-      <SectionImage>
+      <SectionImage hidden="mobile">
         <Mockups.Motivation />
       </SectionImage>
 
       <SectionText>
         <SectionHead>
-          <Title>Stay motivated, achieve more</Title>
+          <Title>Boost motivation & productivity</Title>
         </SectionHead>
 
         <SectionBody>
           <Subtitle>
-            Workcapsule is the anti-todo list. It helps you look back on all the
-            things you’ve done and celebrate your wins. Give yourself a daily
-            boost.
+            Workcapsule is the <strong>anti-todo list</strong>. It helps you
+            look back on all the things you’ve done and celebrate your wins.
+            Give yourself a daily boost.
           </Subtitle>
         </SectionBody>
       </SectionText>
+
+      <SectionImage hidden="tablet">
+        <Mockups.Motivation />
+      </SectionImage>
     </Section>
 
     {/*
@@ -69,22 +73,32 @@ const IndexPage = () => (
     <Section>
       <SectionText>
         <SectionHead>
-          <Title>Capture actions and reactions</Title>
+          <Title>Super simple & flexible</Title>
         </SectionHead>
         <SectionBody>
           <Item>
             <ItemIcon src={myIcon} />
             <Body>
-              Workcapsule is the anti-todo list. It helps you look back on all
-              the things.
+              <strong>Simple - </strong>
+              <span>Type and press enter. It's just that easy.</span>
             </Body>
           </Item>
 
           <Item>
             <ItemIcon src={myIcon} />
             <Body>
-              Workcapsule is the anti-todo list. It helps you look back on all
-              the things.
+              <strong>Flexible - </strong>
+              <span>
+                Capture achievements, habits and everything in between.
+              </span>
+            </Body>
+          </Item>
+
+          <Item>
+            <ItemIcon src={myIcon} />
+            <Body>
+              <strong>Fun - </strong>
+              <span>An emoji is worth 1,000 words, right?</span>
             </Body>
           </Item>
         </SectionBody>
@@ -102,13 +116,13 @@ const IndexPage = () => (
      *
      */}
     <Section>
-      <SectionImage>
+      <SectionImage hidden="mobile">
         <Mockups.Rewind />
       </SectionImage>
 
       <SectionText>
         <SectionHead>
-          <Title>Rewind and review progress</Title>
+          <Title>Stay accountable over time</Title>
         </SectionHead>
 
         <SectionBody>
@@ -119,6 +133,10 @@ const IndexPage = () => (
           </Body>
         </SectionBody>
       </SectionText>
+
+      <SectionImage hidden="tablet">
+        <Mockups.Rewind />
+      </SectionImage>
     </Section>
 
     {/*
@@ -131,7 +149,7 @@ const IndexPage = () => (
       <Section>
         <SectionText align="center">
           <SectionHead>
-            <Title>Spot productivity trends over time</Title>
+            <Title>Spot trends over time</Title>
           </SectionHead>
 
           <SectionBody css={{ marginBottom: '40px' }}>
@@ -155,13 +173,13 @@ const IndexPage = () => (
      */}
     <div className="has-background-white-bis">
       <Section>
-        <SectionImage>
+        <SectionImage hidden="mobile">
           <Mockups.Channel />
         </SectionImage>
 
         <SectionText>
           <SectionHead>
-            <Title>Organize entries with channels </Title>
+            <Title>Organize with channels </Title>
           </SectionHead>
 
           <SectionBody>
@@ -172,6 +190,10 @@ const IndexPage = () => (
             </Body>
           </SectionBody>
         </SectionText>
+
+        <SectionImage hidden="tablet">
+          <Mockups.Channel />
+        </SectionImage>
       </Section>
     </div>
 

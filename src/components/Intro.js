@@ -5,7 +5,7 @@ const Intro = () => (
   <div className="section">
     <div className="container is-fluid has-text-centered">
       <Max>A timecapsule for work and play</Max>
-      <Subtitle>Track all your achievements and activities</Subtitle>
+      <Subtitle>Track all your achievements and habits</Subtitle>
     </div>
   </div>
 )
