@@ -58,7 +58,7 @@ export const Item = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 `
 
 export const ItemIcon = styled.img`

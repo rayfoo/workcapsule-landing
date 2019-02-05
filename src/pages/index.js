@@ -40,7 +40,7 @@ const IndexPage = () => (
      * Stay motivated and achieve more with Workcaspule
      *
      */}
-    <Section>
+    {/* <Section>
       <SectionImage hidden="mobile">
         <Mockups.Motivation />
       </SectionImage>
@@ -62,7 +62,7 @@ const IndexPage = () => (
       <SectionImage hidden="tablet">
         <Mockups.Motivation />
       </SectionImage>
-    </Section>
+    </Section> */}
 
     {/*
      * SECTION TWO
@@ -73,32 +73,30 @@ const IndexPage = () => (
     <Section>
       <SectionText>
         <SectionHead>
-          <Title>Super simple & flexible</Title>
+          <Title>Stay motivated, achieve more</Title>
         </SectionHead>
         <SectionBody>
           <Item>
             <ItemIcon src={myIcon} />
             <Body>
-              <strong>Simple - </strong>
-              <span>Type and press enter. It's just that easy.</span>
+              <strong>An anti-todo list.</strong> There are no boxes to check
+              off, no deadlines and no stress
             </Body>
           </Item>
 
           <Item>
             <ItemIcon src={myIcon} />
             <Body>
-              <strong>Flexible - </strong>
-              <span>
-                Capture achievements, habits and everything in between.
-              </span>
+              <strong>Simply record what you did</strong> and go celebrate your
+              wins, big or small
             </Body>
           </Item>
 
           <Item>
             <ItemIcon src={myIcon} />
             <Body>
-              <strong>Fun - </strong>
-              <span>An emoji is worth 1,000 words, right?</span>
+              <strong>Use emojis to capture the moment </strong> and give
+              yourself a little boost.
             </Body>
           </Item>
         </SectionBody>
@@ -122,15 +120,33 @@ const IndexPage = () => (
 
       <SectionText>
         <SectionHead>
-          <Title>Stay accountable over time</Title>
+          <Title>Rewind and review</Title>
         </SectionHead>
 
         <SectionBody>
-          <Body>
-            Workcapsule is the anti-todo list. It helps you look back on all the
-            things you’ve done and celebrate your wins. Give yourself a daily
-            boost.
-          </Body>
+          <Item>
+            <ItemIcon src={myIcon} />
+            <Body>
+              <strong>Look back and find</strong> your accomplishments from last
+              week, month or any time
+            </Body>
+          </Item>
+
+          <Item>
+            <ItemIcon src={myIcon} />
+            <Body>
+              <strong>Make new habits stick</strong> by seeing your streak and
+              enforcing consistency
+            </Body>
+          </Item>
+
+          <Item>
+            <ItemIcon src={myIcon} />
+            <Body>
+              <strong>Know if you are moving forward</strong> and making
+              progress on important goals
+            </Body>
+          </Item>
         </SectionBody>
       </SectionText>
 
@@ -149,15 +165,25 @@ const IndexPage = () => (
       <Section>
         <SectionText align="center">
           <SectionHead>
-            <Title>Spot trends over time</Title>
+            <Title>Get the big picture and spot trends</Title>
           </SectionHead>
 
           <SectionBody css={{ marginBottom: '40px' }}>
             <Subtitle>
-              Workcapsule is the anti-todo list. It helps you look back on all
-              the things you’ve done and celebrate your wins. Give yourself a
-              daily boost.
+              Detailed statistics to help you better understand how your energy
+              is spent. Break down your data and identify productivity trends.
             </Subtitle>
+
+            <div
+              style={{
+                fontSize: '12px',
+                weight: 700,
+                color: '#7d7d7d',
+                marginTop: '12px',
+              }}
+            >
+              *Feature coming soon
+            </div>
           </SectionBody>
 
           <Mockups.Report />
@@ -179,15 +205,32 @@ const IndexPage = () => (
 
         <SectionText>
           <SectionHead>
-            <Title>Organize with channels </Title>
+            <Title>Organize with channels</Title>
           </SectionHead>
 
           <SectionBody>
-            <Body>
-              Easily structure and navigate through your team's content. Stay up
-              to date on what your team is working on and search through all the
-              info.
-            </Body>
+            <Item>
+              <ItemIcon src={myIcon} />
+              <Body>
+                <strong>Customize</strong> to organize your
+              </Body>
+            </Item>
+
+            <Item>
+              <ItemIcon src={myIcon} />
+              <Body>
+                <strong>Public channels</strong> allow you to share your wins
+                with coworkers, friends and family
+              </Body>
+            </Item>
+
+            <Item>
+              <ItemIcon src={myIcon} />
+              <Body>
+                <strong>Private channels</strong> let you keep humble brags to
+                yourself
+              </Body>
+            </Item>
           </SectionBody>
         </SectionText>
 
@@ -210,11 +253,29 @@ const IndexPage = () => (
         </SectionHead>
 
         <SectionBody>
-          <Body>
-            Workcapsule is the anti-todo list. It helps you look back on all the
-            things you’ve done and celebrate your wins. Give yourself a daily
-            boost.
-          </Body>
+          <Item>
+            <ItemIcon src={myIcon} />
+            <Body>
+              <strong>Keep your team in-sync</strong> and up to date on daily,
+              weekly and monthly progress
+            </Body>
+          </Item>
+
+          <Item>
+            <ItemIcon src={myIcon} />
+            <Body>
+              <strong>Avoid unnecessary status meetings</strong> and keep track
+              of all updates in one place
+            </Body>
+          </Item>
+
+          <Item>
+            <ItemIcon src={myIcon} />
+            <Body>
+              <strong>Simplify performance reviews</strong> and never be left
+              guessing how your team is doing
+            </Body>
+          </Item>
         </SectionBody>
       </SectionText>
 
