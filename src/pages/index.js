@@ -23,8 +23,11 @@ import myIcon from '../images/icon.svg'
 const IndexPage = () => (
   <Layout>
     <SEO
-      title="Workcapsule"
+      url="https://workcapsule.io"
+      title="Workcapsule | Track all your achievements & habits"
+      description="Workcapsule is an anti-todo list. It helps you look back on all the things you’ve done and celebrate your wins. Give yourself a daily boost."
       keywords={[`anti-todo`, `track habits`, `record daily activities`]}
+      preview="https://s3.amazonaws.com/workcapsule.io/assets/landing_preview.png"
     />
 
     <Mockups.HeroBk>
