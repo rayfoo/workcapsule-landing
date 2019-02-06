@@ -30,9 +30,7 @@ const CallToAction = () => (
       <div className="columns">
         <div className="column has-text-centered is-8 is-offset-2">
           <Title inverted>Achieve more with Workcapsule</Title>
-          <Subtitle inverted>
-            Get started today for free, no credit cards required.
-          </Subtitle>
+          <Subtitle inverted>Get started today, it's completely free</Subtitle>
         </div>
       </div>
     </Header>
