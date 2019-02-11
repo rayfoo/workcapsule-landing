@@ -74,7 +74,7 @@ export const Item = styled.div`
 
 export const ItemIcon = ({ icon, color }) => (
   <ItemIconWrapper color={color}>
-    <i class={icon} />
+    <i class={`${icon} fa-fw`} />
   </ItemIconWrapper>
 )
 
